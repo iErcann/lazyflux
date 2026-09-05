@@ -7,7 +7,7 @@ import (
 	"image/png"
 )
 
-// Draws the tray icon: a disc with a bite, coloured by temperature.
+// Draws the tray icon: a disc with a bite, colored by temperature.
 func iconPNG(temp int) []byte {
 	const size = 64
 	const (

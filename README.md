@@ -2,13 +2,13 @@
 
 # lazyflux
 
-A small colour-temperature control for Linux.
+A small color-temperature control for Linux.
 
 No schedules, location tracking, profiles, or daemon to configure. Set a temperature from the tray or the command line and lazyflux remembers it.
 
 ```sh
 lazyflux              # start the tray, restoring the last setting
-lazyflux 4500         # set colour temperature to 4500 K
+lazyflux 4500         # set color temperature to 4500 K
 lazyflux 4500 0.8     # 4500 K at 80% brightness
 lazyflux 6500         # reset to 6500 K
 ```
@@ -31,11 +31,11 @@ go install github.com/iercann/lazyflux@latest
 
 Run `lazyflux`, then enable **Start at login** from the tray menu if you want it to start with your desktop.
 
-Don't run lazyflux alongside f.lux, GNOME Night Light, Redshift, Gammastep, or another colour-temperature tool. They'll overwrite each other's display settings.
+Don't run lazyflux alongside f.lux, GNOME Night Light, Redshift, Gammastep, or another color-temperature tool. They'll overwrite each other's display settings.
 
 ## Support
 
-| Session            | Colour temperature | Brightness | Tray                  |
+| Session            | color temperature | Brightness | Tray                  |
 | ------------------ | -----------------: | ---------: | --------------------- |
 | X11                |                yes |        yes | yes                   |
 | GNOME / Wayland    |                yes |         no | requires AppIndicator |
@@ -49,7 +49,7 @@ lazyflux sets the display gamma ramps directly through RandR.
 
 ### GNOME / Wayland
 
-Wayland doesn't give normal applications direct access to gamma ramps. On GNOME, lazyflux uses GNOME's colour-temperature controls through `gsettings`.
+Wayland doesn't give normal applications direct access to gamma ramps. On GNOME, lazyflux uses GNOME's color-temperature controls through `gsettings`.
 
 Setting `6500 K` restores the normal display temperature.
 

@@ -1,4 +1,4 @@
-// lazyflux - set the screen colour temperature, from the command line or a tray icon.
+// lazyflux - set the screen color temperature, from the command line or a tray icon.
 //
 // Usage:
 //

@@ -26,7 +26,7 @@ archives:
 # lazyflux from the application menu.
 nfpms:
   - package_name: lazyflux
-    description: Screen colour temperature from the tray.
+    description: Screen color temperature from the tray.
     homepage: https://github.com/iercann/lazyflux
     formats:
       - deb
