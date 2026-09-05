@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=lazyflux
+Comment=Screen colour temperature from the tray
+Exec=lazyflux
+Icon=lazyflux
+Terminal=false
+Categories=Utility;Settings;
+Keywords=night;light;colour;temperature;brightness;

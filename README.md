@@ -19,8 +19,12 @@ State is stored in:
 
 ## Install
 
+Download the `.deb` from the [latest release](https://github.com/iercann/lazyflux/releases/latest) and double-click it (Ubuntu, Debian, Mint, Pop). lazyflux then appears in your application menu. Other distributions get a `.tar.gz` with the binary.
+
+With Go installed:
+
 ```sh
-go install github.com/ncr/lazyflux@latest
+go install github.com/iercann/lazyflux@latest
 ```
 
 Run `lazyflux`, then enable **Start at login** from the tray menu if you want it to start with your desktop.

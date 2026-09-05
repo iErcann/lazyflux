@@ -1,4 +1,4 @@
-module lazyflux
+module github.com/iercann/lazyflux
 
 go 1.25.5
 

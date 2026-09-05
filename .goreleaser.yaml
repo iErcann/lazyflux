@@ -1,0 +1,46 @@
+# Builds and packages lazyflux on every v* tag. See .github/workflows/release.yml.
+version: 2
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+
+archives:
+  - formats:
+      - tar.gz
+    files:
+      - README.md
+
+# .deb for Ubuntu, Debian, Mint, Pop: double-click to install, then launch
+# lazyflux from the application menu.
+nfpms:
+  - package_name: lazyflux
+    description: Screen colour temperature from the tray.
+    homepage: https://github.com/iercann/lazyflux
+    formats:
+      - deb
+    bindir: /usr/bin
+    recommends:
+      - zenity
+    contents:
+      - src: packaging/lazyflux.desktop
+        dst: /usr/share/applications/lazyflux.desktop
+      - src: packaging/lazyflux.png
+        dst: /usr/share/icons/hicolor/64x64/apps/lazyflux.png
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
