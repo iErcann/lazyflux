@@ -1,3 +1,5 @@
+<p align="center"><img src="packaging/lazyflux.svg" width="96" alt="lazyflux"></p>
+
 # lazyflux
 
 A small colour-temperature control for Linux.
