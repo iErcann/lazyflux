@@ -47,6 +47,15 @@ Don't run lazyflux alongside f.lux, GNOME Night Light, Redshift, Gammastep, or a
 
 lazyflux sets the display gamma ramps directly through RandR.
 
+On Xfce, a service called `xiccd` resets display colors at login, overriding lazyflux. If you don't use color profiles, disable it:
+
+```sh
+cp /etc/xdg/autostart/xiccd.desktop ~/.config/autostart/
+echo Hidden=true >> ~/.config/autostart/xiccd.desktop
+```
+
+Log out and back in for the change to take effect.
+
 ### GNOME / Wayland
 
 Wayland doesn't give normal applications direct access to gamma ramps. On GNOME, lazyflux uses GNOME's color-temperature controls through `gsettings`.
