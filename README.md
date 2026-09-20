@@ -58,11 +58,7 @@ Log out and back in for the change to take effect.
 
 ### GNOME / Wayland
 
-Wayland doesn't give normal applications direct access to gamma ramps. On GNOME, lazyflux uses GNOME's color-temperature controls through `gsettings`.
-
-Setting `6500 K` restores the normal display temperature.
-
-Other Wayland compositors are currently unsupported.
+On Wayland, lazyflux only works with GNOME, using `gsettings` to control color temperature. KDE, Sway, and Hyprland are not supported.
 
 ## Tray controls
 
